@@ -3,14 +3,15 @@ package com.restaurant.backend.domains;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.Hibernate;
 
 import java.util.Objects;
 
-@Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
 @Embeddable
 public class RecipeId implements java.io.Serializable {
     private static final long serialVersionUID = -1572686919702287300L;
