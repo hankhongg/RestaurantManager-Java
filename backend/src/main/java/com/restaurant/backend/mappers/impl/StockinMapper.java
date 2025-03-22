@@ -4,7 +4,9 @@ import com.restaurant.backend.domains.dto.StockinDto;
 import com.restaurant.backend.domains.entities.Stockin;
 import com.restaurant.backend.mappers.Mapper;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StockinMapper implements Mapper<Stockin, StockinDto> {
     private ModelMapper modelMapper = new ModelMapper();
     public StockinMapper(ModelMapper modelMapper) {
